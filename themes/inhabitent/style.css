@@ -1,9 +1,9 @@
 /*!
-Theme Name: Inhabitent Theme
+Theme Name: RED Starter Theme
 Theme URI: http://underscores.me/
 Author: RED Academy
 Author URI: http://www.redacademy.com
-Description: Theme for project 4 at RED Academy based on RED start theme.
+Description: A WordPress starter theme for RED Academy students.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -43,6 +43,86 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Page Templates
 	## Front page
 --------------------------------------------------------------*/
+.site-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 3fr;
+  height: 250px;
+  background-image: url("../../Images/dark-wood.png");
+  padding-left: 120px;
+  padding-right: 20px; }
+  .site-footer .logosvg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding-top: 50px; }
+    .site-footer .logosvg img {
+      width: 80%; }
+    .site-footer .logosvg a {
+      width: 350px;
+      height: 55px; }
+  .site-footer h3 {
+    margin: 0;
+    text-transform: uppercase;
+    color: #d99054;
+    letter-spacing: 2px; }
+  .site-footer p {
+    color: #fff; }
+    .site-footer p svg {
+      margin-left: 5px;
+      margin-right: 5px; }
+
+.contact-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 50px;
+  width: 256px;
+  height: 155px; }
+  .contact-info p {
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  .contact-info a {
+    text-decoration: none;
+    color: white; }
+    .contact-info a:hover {
+      text-decoration: underline; }
+
+.business-hours {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 50px;
+  width: 250px;
+  height: 155px; }
+  .business-hours p {
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+
+.footer-copywrite {
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  background-image: url("../../Images/dark-wood.png");
+  height: 75px; }
+  .footer-copywrite .bold {
+    color: #fff; }
+  .footer-copywrite p {
+    margin: 0;
+    padding-top: 20px;
+    color: #fff; }
+
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
