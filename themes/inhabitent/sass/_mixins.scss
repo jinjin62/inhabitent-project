@@ -11,6 +11,20 @@
   margin-right: auto;
 }
 
+//Aboout page
+.site-main {
+  text-align: center;
+  h2 {
+    text-transform: uppercase;
+  }
+  .entry-header {
+    height: 100vh;
+  }
+  .entry-title {
+	text-transform: uppercase;
+  }
+}
+
 // Footer styling
 .site-footer {
   display: grid;
@@ -50,7 +64,7 @@
   display: flex;
   flex-direction: column;
   padding-top: 50px;
-  width: 256px;
+  width: 255px;
   height: 155px;
   p {
     margin-top: 10px;
@@ -58,9 +72,10 @@
   }
   a {
     text-decoration: none;
-    color: white;
+    color: inherit;
     &:hover {
       text-decoration: underline;
+      color: white;
     }
   }
 }
@@ -76,6 +91,9 @@
     margin-top: 10px;
     margin-bottom: 10px;
   }
+  .strong {
+    font-weight: bold;
+  }
 }
 
 .footer-copywrite {
@@ -85,7 +103,7 @@
   background-image: url('../../Images/dark-wood.png');
   height: 75px;
   .bold {
-	  color: #fff;
+    color: #fff;
   }
   p {
     margin: 0;

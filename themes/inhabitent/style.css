@@ -43,6 +43,15 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Page Templates
 	## Front page
 --------------------------------------------------------------*/
+.site-main {
+  text-align: center; }
+  .site-main h2 {
+    text-transform: uppercase; }
+  .site-main .entry-header {
+    height: 100vh; }
+  .site-main .entry-title {
+    text-transform: uppercase; }
+
 .site-footer {
   display: grid;
   grid-template-columns: 1fr 1fr 3fr;
@@ -83,16 +92,17 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
       -ms-flex-direction: column;
           flex-direction: column;
   padding-top: 50px;
-  width: 256px;
+  width: 255px;
   height: 155px; }
   .contact-info p {
     margin-top: 10px;
     margin-bottom: 10px; }
   .contact-info a {
     text-decoration: none;
-    color: white; }
+    color: inherit; }
     .contact-info a:hover {
-      text-decoration: underline; }
+      text-decoration: underline;
+      color: white; }
 
 .business-hours {
   display: -webkit-box;
@@ -109,6 +119,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     color: #fff;
     margin-top: 10px;
     margin-bottom: 10px; }
+  .business-hours .strong {
+    font-weight: bold; }
 
 .footer-copywrite {
   width: 100%;

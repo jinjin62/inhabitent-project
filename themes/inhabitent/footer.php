@@ -23,9 +23,9 @@
     </div><!-- .contact-info -->
     <div class="business-hours">
         <h3> business hours </h3>
-        <p><span class='bold'> Monday-Friday: </span> 9am to 5pm</p>
-        <p><span class='bold'> Saturday: </span> 10am to 2pm</p>
-        <p><span class='bold'> Sunday: </span> Closed</p>
+        <p><span class='strong'> Monday-Friday: </span> 9am to 5pm</p>
+        <p><span class='strong'> Saturday: </span> 10am to 2pm</p>
+        <p><span class='strong'> Sunday: </span> Closed</p>
     </div>
     <div class="logosvg">
         <a href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-text.svg" /></a>

@@ -14,5 +14,4 @@ get_header(); ?>
 <?php endforeach;
 wp_reset_postdata(); ?>
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?> 
