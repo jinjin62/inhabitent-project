@@ -43,98 +43,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Page Templates
 	## Front page
 --------------------------------------------------------------*/
-.site-main {
-  text-align: center; }
-  .site-main h2 {
-    text-transform: uppercase; }
-  .site-main .entry-header {
-    height: 100vh; }
-  .site-main .entry-title {
-    text-transform: uppercase; }
-
-.site-footer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 3fr;
-  height: 250px;
-  background-image: url("../../Images/dark-wood.png");
-  padding-left: 120px;
-  padding-right: 20px; }
-  .site-footer .logosvg {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    padding-top: 50px; }
-    .site-footer .logosvg img {
-      width: 80%; }
-    .site-footer .logosvg a {
-      width: 350px;
-      height: 55px; }
-  .site-footer h3 {
-    margin: 0;
-    text-transform: uppercase;
-    color: #d99054;
-    letter-spacing: 2px; }
-  .site-footer p {
-    color: #fff; }
-    .site-footer p svg {
-      margin-left: 5px;
-      margin-right: 5px; }
-
-.contact-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding-top: 50px;
-  width: 255px;
-  height: 155px; }
-  .contact-info p {
-    margin-top: 10px;
-    margin-bottom: 10px; }
-  .contact-info a {
-    text-decoration: none;
-    color: inherit; }
-    .contact-info a:hover {
-      text-decoration: underline;
-      color: white; }
-
-.business-hours {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding-top: 50px;
-  width: 250px;
-  height: 155px; }
-  .business-hours p {
-    color: #fff;
-    margin-top: 10px;
-    margin-bottom: 10px; }
-  .business-hours .strong {
-    font-weight: bold; }
-
-.footer-copywrite {
-  width: 100%;
-  text-align: center;
-  text-transform: uppercase;
-  background-image: url("../../Images/dark-wood.png");
-  height: 75px; }
-  .footer-copywrite .bold {
-    color: #fff; }
-  .footer-copywrite p {
-    margin: 0;
-    padding-top: 20px;
-    color: #fff; }
-
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -313,6 +221,101 @@ table {
 td,
 th {
   padding: 0; }
+
+.site-header {
+  display: grid; }
+
+.site-about {
+  text-align: center; }
+  .site-about h2 {
+    text-transform: uppercase; }
+  .site-about .entry-header {
+    min-height: 400vh; }
+  .site-about .entry-title {
+    text-transform: uppercase; }
+  .site-about .about-content {
+    max-width: 500px; }
+  .site-about p {
+    max-width: 200px; }
+
+.site-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 3fr;
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  min-height: 250px;
+  background-image: url("../../Images/dark-wood.png");
+  padding-left: 40px;
+  padding-left: 40px; }
+  .site-footer .logosvg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding-top: 50px; }
+    .site-footer .logosvg img {
+      width: 80%; }
+  .site-footer h3 {
+    margin: 0;
+    text-transform: uppercase;
+    color: #d99054;
+    letter-spacing: 2px; }
+  .site-footer p {
+    color: #fff; }
+    .site-footer p svg {
+      margin-left: 5px;
+      margin-right: 5px; }
+
+.contact-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 50px; }
+  .contact-info p {
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  .contact-info a {
+    text-decoration: none;
+    color: inherit; }
+    .contact-info a:hover {
+      text-decoration: underline;
+      color: white; }
+
+.business-hours {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 50px; }
+  .business-hours p {
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  .business-hours .strong {
+    font-weight: bold; }
+
+.footer-copyright {
+  grid-column: 1 / 4;
+  grid-row: 2;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  background-image: url("../../Images/dark-wood.png");
+  padding: 20px; }
+  .footer-copyright .bold {
+    color: #fff; }
+  .footer-copyright p {
+    margin: 0;
+    color: #fff; }
 
 /*--------------------------------------------------------------
 # Embedded Fonts

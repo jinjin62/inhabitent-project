@@ -6,8 +6,6 @@
  */
 ?>
 
-</div><!-- #content -->
-
 <footer class="site-footer">
     <div class="contact-info">
         <h3> contact info </h3>
@@ -30,11 +28,10 @@
     <div class="logosvg">
         <a href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-text.svg" /></a>
     </div>
+    <div class="footer-copyright">
+        <p>copyright &copy; 2019 inhabitent </p>
+    </div>
 </footer><!-- #colophon -->
-<div class="footer-copywrite">
-    <p>copywrite &copy; 2019 inhabitent </p>
-</div>
-</div><!-- #page -->
 
 <?php wp_footer(); ?>
 

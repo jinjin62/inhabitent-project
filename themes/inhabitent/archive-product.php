@@ -18,7 +18,14 @@ get_header(); ?>
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
 			</header><!-- .page-header -->
-
+			<section>
+           <?php $product_types=get_terms('product_type');?>
+           <?php foreach ( $product_types as $term ) : setup_postdata( $term ); ?>
+              <div>
+                 <a href=<?php echo get_term_link($term)?>> <?php echo $term->name?> stuff</a>
+              </div>
+           <?php endforeach; wp_reset_postdata(); ?>
+        </section>
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 

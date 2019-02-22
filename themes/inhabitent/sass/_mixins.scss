@@ -11,17 +11,29 @@
   margin-right: auto;
 }
 
+//Header styling
+
+.site-header {
+  display: grid;
+}
+
 //Aboout page
-.site-main {
+.site-about {
   text-align: center;
   h2 {
     text-transform: uppercase;
   }
   .entry-header {
-    height: 100vh;
+    min-height: 400vh;
   }
   .entry-title {
-	text-transform: uppercase;
+    text-transform: uppercase;
+  }
+  .about-content {
+    max-width: 500px;
+  }
+  p {
+    max-width: 200px;
   }
 }
 
@@ -29,10 +41,12 @@
 .site-footer {
   display: grid;
   grid-template-columns: 1fr 1fr 3fr;
-  height: 250px;
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  min-height: 250px;
   background-image: url('../../Images/dark-wood.png');
-  padding-left: 120px;
-  padding-right: 20px;
+  padding-left: 40px;
+  padding-left: 40px;
   .logosvg {
     display: flex;
     justify-content: flex-end;
@@ -40,10 +54,9 @@
     img {
       width: 80%;
     }
-    a {
-      width: 350px;
-      height: 55px;
-    }
+    // a {
+    //   width: 350px;
+    // }
   }
   h3 {
     margin: 0;
@@ -64,8 +77,6 @@
   display: flex;
   flex-direction: column;
   padding-top: 50px;
-  width: 255px;
-  height: 155px;
   p {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -84,8 +95,6 @@
   display: flex;
   flex-direction: column;
   padding-top: 50px;
-  width: 250px;
-  height: 155px;
   p {
     color: #fff;
     margin-top: 10px;
@@ -96,18 +105,19 @@
   }
 }
 
-.footer-copywrite {
+.footer-copyright {
+  grid-column: 1 / 4;
+  grid-row: 2;
   width: 100%;
   text-align: center;
   text-transform: uppercase;
   background-image: url('../../Images/dark-wood.png');
-  height: 75px;
+  padding: 20px;
   .bold {
     color: #fff;
   }
   p {
     margin: 0;
-    padding-top: 20px;
     color: #fff;
   }
 }
