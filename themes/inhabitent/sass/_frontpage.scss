@@ -6,3 +6,76 @@
   background-position: center, center;
   height: 700px;
 }
+//front-page (do, eat, sleep, wear) boxes
+.product-type-block-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #e1e1e1;
+  border-top: 5px solid #e1e1e1;
+  text-align: center;
+  width: 23%;
+
+  &:hover {
+    border-color: darken(#f0e4d1, 10%);
+  }
+
+  img {
+    padding-top: 10px;
+    width: 30%;
+  }
+  h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-bottom: 4rem;
+    font-family: 'Merriweather';
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+    background: blue;
+  }
+
+  li {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.product-type-blocks {
+  display: flex;
+  justify-content: space-around;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.product-type-block-wrapper {
+  padding: 0.75rem;
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    background-color: #248a83;
+    &:hover {
+      background-color: darken(#248a83, 10%);
+    }
+  }
+}
+
+.product-info-container {
+  padding-top: 50px;
+  h2 {
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-bottom: 4rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+  }
+}

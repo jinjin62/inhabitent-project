@@ -14,21 +14,36 @@ get_header(); ?>
 )); ?>
 
 <div class="front-page-image">
-    
+
 </div>
 
-<div class="product-types-container">
-    <?php foreach ($product_types as $product_type): ?>
-    <div class="product-type-item">
-        <img class="product-type-logo" src=<?php echo inhabitent_get_product_type_logo($product_type->name . '.svg') ?> >
-        <p>
-            <?php echo $product_type->description ?>
-        </p>
-        <button onclick="<?php echo get_term_link($product_type); ?>">
-            <?php echo $product_type->name ?> Stuff </button>
+<!-- Product terms -->
+<section class="product-info-container">
+    <h2>Shop Stuff</h2>
+    <?php
+    $terms = get_terms(array(
+        'taxonomy'   => 'product_type',
+        'hide_empty' => 0,
+    ));
+    if (!empty($terms)):
+        ?>
+    <div class="product-type-blocks">
+        <?php foreach ($terms as $term):
+            ?>
+        <div class="product-type-block-wrapper">
+            <img src="<?php echo get_template_directory_uri() . '/Images/product-type-icons/' . $term->slug; ?>.svg" alt="<?php echo $term->name; ?>" />
+            <p>
+                <?php echo $term->description; ?>
+            </p>
+            <p>
+                <a href="<?php echo get_term_link($term); ?>" class="btn">
+                    <?php echo $term->name; ?> Stuff</a>
+            </p>
+        </div>
+        <?php endforeach; ?>
     </div>
-    <?php endforeach ?>
-</div>
+    <?php endif; ?>
+</section>
 
 <?php $product_posts = inhabitent_get_latest_posts(); ?>
 <?php foreach ($product_posts as $post): setup_postdata($post); ?>
