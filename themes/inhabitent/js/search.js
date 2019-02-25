@@ -1,5 +1,5 @@
 (function($) {
-  var $seachInput = $('.main-navigation .search-field');
+  let $seachInput = $('.main-navigation .search-field');
   $seachInput.hide();
 
   $('.main-navigation .search-submit').on('click', function(evt) {

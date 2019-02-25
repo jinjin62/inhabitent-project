@@ -25,9 +25,9 @@
   .nav-search {
     padding-top: 18px;
     margin-right: 40px;
-    // &:hover {
-    //   color: $link__color;
-    // }
+    &:hover {
+      color: $link_color;
+    }
     .search-submit {
       border: none;
       background: none;
@@ -38,7 +38,7 @@
       svg {
         width: 30px;
         height: 1.2em;
-        // color: $link__color;
+        color: $link_color;
       }
     }
     .search-field {
