@@ -24,14 +24,17 @@
             <?php echo esc_html('Skip to content'); ?></a>
 
         <header id="masthead" class="site-header" role="banner">
-            <a href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php echo get_template_directory_uri(); ?>/Images/logos/inhabitent-logo-tent.svg" />
-                <nav id="site-navigation" class="main-navigation" role="navigation">
+            <nav id="site-navigation" class="main-navigation" role="navigation">
+                <a href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php echo get_template_directory_uri(); ?>/Images/logos/inhabitent-logo-tent.svg" />
 
                     <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
                         <?php echo esc_html('Primary Menu'); ?></button>
                     <?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu')); ?>
 
-                </nav><!-- #site-navigation -->
+                    <div class="nav-search">
+                        <?php get_search_form(); ?>
+                        <div>
+            </nav><!-- #site-navigation -->
         </header><!-- #masthead -->
 
         <div id="content" class="site-content"> 

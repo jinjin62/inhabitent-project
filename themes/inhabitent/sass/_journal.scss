@@ -1,14 +1,19 @@
 .journal-page {
   max-width: 500px;
   margin: auto;
-  display: flex;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  max-width: 90%;
   .entry-header {
     position: relative;
+    max-width: 75%;
   }
   .entry-title {
     position: absolute;
     top: 0;
     background-color: $color_title_bg;
+    padding: 10px;
+    max-width: 75%;
     a {
       color: white;
       padding: 10px 30px;
@@ -17,8 +22,19 @@
   }
   .entry-meta {
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: 6px;
+    right: 0px;
     background-color: $color_title_bg;
+    color: white;
+    display: inline-block;
+    padding: 7px;
+  }
+}
+
+.journal-container {
+  padding-right: 50px;
+  padding-left: 70px;
+  p {
+    padding-right: 180px;
   }
 }

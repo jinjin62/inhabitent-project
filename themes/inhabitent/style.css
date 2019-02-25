@@ -222,15 +222,8 @@ td,
 th {
   padding: 0; }
 
-.site-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
-  .site-header img {
-    max-width: 45px; }
+.site-header img {
+  max-width: 45px; }
 
 .site-about {
   text-align: center; }
@@ -775,24 +768,48 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.front-page-image {
+  background-image: url(../../images/logos/inhabitent-logo-full.svg), url(../../images/home-hero.jpg);
+  background-repeat: no-repeat, no-repeat;
+  background-size: auto, cover;
+  background-position: center, center;
+  height: 700px; }
+
 .journal-page {
   max-width: 500px;
   margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  max-width: 90%; }
   .journal-page .entry-header {
-    position: relative; }
+    position: relative;
+    max-width: 75%; }
   .journal-page .entry-title {
     position: absolute;
     top: 0;
-    background-color: #248A83; }
+    background-color: #248A83;
+    padding: 10px;
+    max-width: 75%; }
     .journal-page .entry-title a {
       color: white;
       padding: 10px 30px;
       text-transform: uppercase; }
   .journal-page .entry-meta {
     position: absolute;
-    bottom: 0;
-    right: 0;
-    background-color: #248A83; }
+    bottom: 6px;
+    right: 0px;
+    background-color: #248A83;
+    color: white;
+    display: inline-block;
+    padding: 7px; }
+
+.journal-container {
+  padding-right: 50px;
+  padding-left: 70px; }
+  .journal-container p {
+    padding-right: 180px; }
+
+#masthead {
+  height: 45px;
+  width: 100%;
+  border-bottom: 1px solid #e1e1e1; }

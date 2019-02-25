@@ -52,7 +52,7 @@ add_filter('login_headerurl', 'inhabitent_login_url');
 //get the path of product type logo 
 function inhabitent_get_product_type_logo($name)
 {
-    return get_template_directory_uri() . '../images/product-type-icons/' . $name;
+    return get_template_directory_uri() . '/images/product-type-icons/' . $name;
 }
 
 function inhabitent_products($query)

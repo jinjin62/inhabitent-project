@@ -13,6 +13,10 @@ get_header(); ?>
     'order' => 'ASC'
 )); ?>
 
+<div class="front-page-image">
+    
+</div>
+
 <div class="product-types-container">
     <?php foreach ($product_types as $product_type): ?>
     <div class="product-type-item">
@@ -32,7 +36,7 @@ get_header(); ?>
 <a href="<?php the_permalink(); ?>">Read Entry</a>
 <?php endforeach;
 wp_reset_postdata(); ?>
-<section>
+<!-- <section>
     <?php $product_types = get_terms('product_type'); ?>
     <?php foreach ($product_types as $term): setup_postdata($term); ?>
     <div>
@@ -45,7 +49,7 @@ wp_reset_postdata(); ?>
     </div>
     <?php endforeach;
 wp_reset_postdata(); ?>
-</section>
+</section> -->
 
 
 
