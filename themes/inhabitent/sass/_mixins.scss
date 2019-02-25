@@ -14,7 +14,11 @@
 //Header styling
 
 .site-header {
-  display: grid;
+  display: flex;
+  justify-content: space-between;
+  img {
+    max-width: 45px;
+  }
 }
 
 //Aboout page

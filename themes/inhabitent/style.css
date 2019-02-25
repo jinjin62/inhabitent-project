@@ -223,7 +223,14 @@ th {
   padding: 0; }
 
 .site-header {
-  display: grid; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .site-header img {
+    max-width: 45px; }
 
 .site-about {
   text-align: center; }
@@ -515,7 +522,7 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: royalblue; }
+  color: #248A83; }
   a:visited {
     color: purple; }
   a:hover, a:focus, a:active {
@@ -701,6 +708,9 @@ a {
 .bypostauthor {
   display: block; }
 
+a {
+  text-decoration: none; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -765,3 +775,24 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.journal-page {
+  max-width: 500px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .journal-page .entry-header {
+    position: relative; }
+  .journal-page .entry-title {
+    position: absolute;
+    top: 0;
+    background-color: #248A83; }
+    .journal-page .entry-title a {
+      color: white;
+      padding: 10px 30px;
+      text-transform: uppercase; }
+  .journal-page .entry-meta {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #248A83; }
