@@ -3,3 +3,24 @@
   width: 100%;
   border-bottom: 1px solid #e1e1e1;
 }
+
+.main-navigation {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10px;
+  .nav-search {
+    display: flex;
+    flex-direction: row;
+  }
+  .menu-main-menu-container .menu {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: auto;
+    //padding-top: 10px;
+    li {
+      padding: 10px;
+    }
+  }
+}

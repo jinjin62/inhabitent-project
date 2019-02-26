@@ -4,19 +4,22 @@
   display: grid;
   grid-template-columns: 2fr 1fr;
   max-width: 90%;
+  padding-top: 40px;
   .entry-header {
     position: relative;
-    max-width: 75%;
+    img {
+      width: 100%;
+    }
   }
   .entry-title {
     position: absolute;
     top: 0;
     background-color: $color_title_bg;
-    padding: 10px;
+    padding: 20px;
     max-width: 75%;
+    text-align: start;
     a {
       color: white;
-      padding: 10px 30px;
       text-transform: uppercase;
     }
   }
@@ -33,7 +36,7 @@
 
 .journal-container {
   padding-right: 50px;
-  padding-left: 70px;
+  padding-left: 40px;
   p {
     padding-right: 180px;
   }
