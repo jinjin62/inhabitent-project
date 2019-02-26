@@ -1,4 +1,4 @@
-(function($) {
+(function($) { //proper class? Check targeting, (enque functions.php)?!?!? PATH IS WRONG?
   let $seachInput = $('.main-navigation .search-field');
   $seachInput.hide();
 
