@@ -1,21 +1,17 @@
-# RED Starter
+# Inhabitent
 
-A WordPress starter theme for RED Academy students, forked from Underscores.
+Just another hipster camping website.
 
-## Installation
+## The Build
 
-### 1. Download me (don't clone me!)
+Built using WordPress, SQL, php, jQuery.
 
-Then add me to your `wp-content` directory.
+Styled using sass
 
-### 2. Rename the `redstarter-master` directory
+Plugins necessary included in repo, Business hour widget plug build with RED Widget Boilerplate to allow easy access to change business hours.
 
-Make sure that the theme directory name is project appropriate!
+Contact Form 7 plugin used for the email form.
 
-### 3. Install the dev dependencies
+### Product Spotlight
 
-Next you'll need to run `npm install` **inside your theme directory** next to install the node modules you'll need for Gulp, etc.
-
-### 4. Update the proxy in `gulpfile.js`
-
-Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `localhost[:port-here]/[your-dir-name-here]` to the appropriate localhost URL).
+<img src="images/read-me-img.jpg">

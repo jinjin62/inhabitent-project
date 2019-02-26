@@ -577,13 +577,14 @@ input {
       background: none;
       overflow: hidden;
       outline: none;
+      outline-color: none;
       padding: 0;
       -webkit-box-shadow: none;
-              box-shadow: none; }
+              box-shadow: none;
+      color: #248a83; }
       .main-navigation .nav-search .search-submit svg {
         width: 30px;
-        height: 1.2em;
-        color: #248a83; }
+        height: 1.2em; }
     .main-navigation .nav-search .search-field {
       background: transparent; }
       .main-navigation .nav-search .search-field:focus {
@@ -765,7 +766,7 @@ object {
 .wp-caption {
   margin-bottom: 1.5rem;
   max-width: 100%; }
-  .wp-caption img[class*="wp-image-"] {
+  .wp-caption img[class*='wp-image-'] {
     display: block;
     margin-left: auto;
     margin-right: auto; }
@@ -1270,7 +1271,7 @@ body.product-template-default article {
             justify-content: flex-end;
     margin: auto; }
     .main-navigation .menu-main-menu-container .menu li {
-      padding: 10px; }
+      padding: 0 10px; }
 
 body.archive .site-main {
   margin-left: 5rem;
