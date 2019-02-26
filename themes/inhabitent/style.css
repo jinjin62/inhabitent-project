@@ -807,7 +807,6 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-/* Single Product */
 body.product-template-default article {
   width: 100%;
   height: 80%;
@@ -858,7 +857,7 @@ body.product-template-default article {
   background-repeat: no-repeat, no-repeat;
   background-size: auto, cover;
   background-position: center, center;
-  height: 700px; }
+  height: 800px; }
 
 .product-type-block-wrapper {
   display: -webkit-box;

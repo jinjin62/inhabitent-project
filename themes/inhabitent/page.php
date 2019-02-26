@@ -6,18 +6,18 @@
  */
 
 get_header(); ?>
+<div id="find-us-wrapper-id" class="find-us-page-wrapper">
+    <div id="primary" class="content-area find-us">
+        <main id="main" class="site-main" role="main">
 
-	<div id="primary" class="content-area find-us">
-		<main id="main" class="site-main" role="main">
+            <?php while (have_posts()): the_post(); ?>
 
-			<?php while ( have_posts() ) : the_post(); ?>
+            <?php get_template_part('template-parts/content', 'page'); ?>
 
-				<?php get_template_part( 'template-parts/content', 'page' ); ?>
+            <?php endwhile; ?>
 
-			<?php endwhile; // End of the loop. ?>
+        </main><!-- #main -->
+    </div><!-- #primary -->
+    <?php get_sidebar(); ?>
 
-		</main><!-- #main -->
-		<?php get_sidebar(); ?>
-	</div><!-- #primary -->
-
-<?php get_footer(); ?>
+    <?php get_footer(); ?> 

@@ -2,7 +2,7 @@
 # Page Templates
 --------------------------------------------------------------*/
 
-/* Single Product */
+// Single Product
 body.product-template-default {
   article {
     width: 100%;
@@ -57,3 +57,24 @@ body.product-template-default {
     }
   }
 }
+
+// find us
+
+
+
+// .wpcf7-submit {
+//   border: none;
+//   border-radius: 0;
+//   box-shadow: none;
+//   padding: 0.75rem 1.5rem;
+//   font-size: 0.9rem;
+//   text-decoration: none;
+//   text-transform: uppercase;
+//   color: white;
+//   padding: 0.75rem 1.5rem;
+//   background-color: #248a83;
+//   width: 150px;
+//   &:hover {
+//     background-color: darken(#248a83, 10%);
+//   }
+// }

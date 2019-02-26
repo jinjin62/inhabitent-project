@@ -98,6 +98,6 @@ get_header(); ?>
             <?php endif; ?>
         </div> <!-- content-block-wrapper-->
     </main><!-- #main -->
-</div><!-- #primary -->
+</div><!-- #primar y -->
 
 <?php get_footer(); ?> 
