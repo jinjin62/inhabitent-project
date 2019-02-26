@@ -1081,6 +1081,77 @@ body.product-template-default article {
       background-color: #248a83;
       color: #fff; }
 
+.single-wrapper .entry-header {
+  position: relative; }
+
+.single-wrapper .entry-title {
+  position: absolute;
+  top: 0;
+  padding: 0.75rem 1.5rem;
+  font-size: 2.1rem;
+  letter-spacing: 2px;
+  max-width: 75%;
+  text-transform: uppercase; }
+
+.single-wrapper .single-content .entry-meta {
+  bottom: 8px;
+  right: 0;
+  position: absolute;
+  text-align: right;
+  color: #fff; }
+  .single-wrapper .single-content .entry-meta a {
+    color: #fff;
+    text-decoration: none; }
+
+.single-wrapper .widget-title {
+  text-transform: uppercase; }
+
+#respond {
+  display: block; }
+  #respond p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  #respond .comment-form-author {
+    float: left;
+    margin-right: 1%;
+    width: 49%; }
+  #respond .comment-form-email {
+    margin-left: 1%;
+    float: left;
+    width: 49%; }
+  #respond .comment-form-url {
+    clear: left;
+    width: 100%; }
+    #respond .comment-form-url #url {
+      width: 100%; }
+  #respond input {
+    background-color: #f4f4f4;
+    border: 1px solid #e1e1e1;
+    width: 300px; }
+  #respond textarea {
+    background-color: #f4f4f4;
+    border: 1px solid #e1e1e1; }
+  #respond #submit {
+    border: none;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    background-color: #248a83;
+    width: 125px; }
+    #respond #submit:hover {
+      background-color: #19625d; }
+
 #masthead {
   height: 45px;
   width: 100%;
