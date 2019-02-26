@@ -23,7 +23,7 @@
 }
 
 //Aboout page
-body.page-template-about {
+body.page-template {
   .entry-header {
     display: flex;
     justify-content: center;
@@ -46,6 +46,7 @@ body.page-template-about {
     }
   }
 }
+
 // Footer styling
 .site-footer {
   display: grid;
@@ -63,9 +64,6 @@ body.page-template-about {
     img {
       width: 80%;
     }
-    // a {
-    //   width: 350px;
-    // }
   }
   h3 {
     margin: 0;

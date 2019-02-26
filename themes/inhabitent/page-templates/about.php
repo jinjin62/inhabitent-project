@@ -18,6 +18,6 @@ get_header(); ?>
 
         <?php endwhile; ?>
 
-    </main><!-- #main -->
-</div><!-- #primary -->
+    </main>
+</div>
 <?php get_footer(); ?> 
