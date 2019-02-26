@@ -25,10 +25,10 @@ get_header(); ?>
 
         <?php get_template_part('template-parts/content'); ?>
 
+        <a href="<?php echo get_permalink(); ?>" rel="bookmark" class="journal-readmore">Read More →</a>
         <?php endwhile; ?>
 
         <?php the_posts_navigation(); ?>
-
         <?php else: ?>
 
         <?php get_template_part('template-parts/content', 'none'); ?>

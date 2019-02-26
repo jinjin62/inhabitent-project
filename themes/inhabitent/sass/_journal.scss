@@ -40,4 +40,19 @@
   p {
     padding-right: 180px;
   }
+  .journal-readmore {
+    border: 1px solid black;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.5rem 1.1rem;
+    bottom: 0;
+    width: 150px;
+    height: 42px;
+    &:hover {
+      background-color: $link_color;
+      color: #fff;
+    }
+  }
 }

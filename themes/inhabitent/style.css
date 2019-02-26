@@ -626,7 +626,7 @@ textarea {
   display: block; }
 
 .hentry {
-  margin: 0 0 1.5rem; }
+  margin: 1rem 0 1.5rem; }
 
 .updated:not(.published) {
   display: none; }
@@ -794,7 +794,7 @@ body.product-template-default article {
   text-align: center;
   width: 23%; }
   .product-type-block-wrapper:hover {
-    border-color: #e3cdab; }
+    border-color: #cd752d; }
   .product-type-block-wrapper img {
     padding-top: 10px;
     width: 30%; }
@@ -1067,6 +1067,19 @@ body.product-template-default article {
   padding-left: 40px; }
   .journal-container p {
     padding-right: 180px; }
+  .journal-container .journal-readmore {
+    border: 1px solid black;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.5rem 1.1rem;
+    bottom: 0;
+    width: 150px;
+    height: 42px; }
+    .journal-container .journal-readmore:hover {
+      background-color: #248a83;
+      color: #fff; }
 
 #masthead {
   height: 45px;
