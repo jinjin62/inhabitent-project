@@ -8,7 +8,7 @@
 get_header(); ?>
 
 <div class="single-wrapper">
-    <div class="single-content">
+    <div class="single-content sidebar-container">
         <?php while (have_posts()): the_post(); ?>
 
         <?php get_template_part('template-parts/content', 'single'); ?>

@@ -21,7 +21,7 @@ get_header(); ?>
                 <?php the_title('<h1 class="entry-title">', '</h1>'); ?>
                 <div class="entry-content">
                     <h3 class="product-price">
-                        <?php echo CFS()->get('price'); ?>
+                        <?php echo CFS()->get('product_price'); ?>
                     </h3>
                     <!--display price -->
                     <?php the_content(); ?>

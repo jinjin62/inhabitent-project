@@ -10,9 +10,7 @@
 
     $(document).on('keypress', function(event) {
       if ($seachInput.val() !== '') {
-        if (event.which == 13) {
-          $('.search-form').submit();
-        }
+        $('.search-form').submit();
       }
     });
   });

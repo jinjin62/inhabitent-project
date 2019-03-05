@@ -7,7 +7,7 @@
 
 get_header(); ?>
 <div id="find-us-wrapper-id" class="find-us-page-wrapper">
-    <div id="primary" class="content-area find-us">
+    <div id="primary" class="findus-area">
         <main id="main" class="site-main" role="main">
 
             <?php while (have_posts()): the_post(); ?>
@@ -18,6 +18,9 @@ get_header(); ?>
 
         </main><!-- #main -->
     </div><!-- #primary -->
+
     <?php get_sidebar(); ?>
 
-    <?php get_footer(); ?> 
+</div>
+<!--find-us-page-wrapper -->
+<?php get_footer(); ?> 

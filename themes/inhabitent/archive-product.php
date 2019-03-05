@@ -47,7 +47,7 @@ get_header(); ?>
             // $prods = have_posts( $args );
             $the_query = new WP_Query($args);
 
-            // d($the_query);
+            // ($the_query);
             if ($the_query->have_posts()): ?>
             </header><!-- .page-header -->
 
@@ -68,7 +68,7 @@ get_header(); ?>
                                 '<h2 class="entry-title">',
                                 esc_url(get_permalink())
                             ),
-                            CFS()->get('price'),
+                            CFS()->get('product_price'),
                             '</h2>'
                         ); ?>
                     </div>

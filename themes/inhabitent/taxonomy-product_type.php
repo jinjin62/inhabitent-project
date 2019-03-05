@@ -36,7 +36,7 @@ get_header(); ?>
                                 '<h2 class="entry-title">',
                                 esc_url(get_permalink())
                             ),
-                            CFS()->get('price'),
+                            CFS()->get('product_price'),
                             '</h2>'
                         ); ?>
                     </div>
