@@ -59,7 +59,7 @@ get_header(); ?>
                 <header class="entry-header">
                     <a href="<?php echo get_permalink(); ?>" rel="bookmark">
                         <?php if (has_post_thumbnail()): ?>
-                        <?php the_post_thumbnail('large'); ?>
+                        <?php the_post_thumbnail('medium'); ?>
                     </a>
                     <?php endif; ?>
                     <div class="product-block-text">
@@ -68,6 +68,7 @@ get_header(); ?>
                                 '<h2 class="entry-title">',
                                 esc_url(get_permalink())
                             ),
+
                             CFS()->get('product_price'),
                             '</h2>'
                         ); ?>
@@ -75,7 +76,7 @@ get_header(); ?>
 
 
                     <?php if ('post' === get_post_type()): ?>
-                    <div class="entry-meta">
+                    <div class="entry-meta ">
                         <?php red_starter_posted_on(); ?> /
                         <?php comments_number('0 Comments', '1 Comment', '% Comments'); ?> /
                         <?php red_starter_posted_by(); ?>
@@ -100,4 +101,4 @@ get_header(); ?>
     </main><!-- #main -->
 </div><!-- #primar y -->
 
-<?php get_footer(); ?> 
+<?php get_footer();  ?> 

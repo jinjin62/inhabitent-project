@@ -158,7 +158,6 @@ body.page-template {
     color: inherit;
     &:hover {
       text-decoration: underline;
-      color: white;
     }
   }
 }
@@ -216,14 +215,14 @@ body.page-template {
     border-right: 1px solid #e1e1e1;
     width: 73%;
     h2 {
-      // font-family: $header__font;
+      // font-family: $header_font;
       text-transform: uppercase;
       letter-spacing: 2px;
     }
 
     .search-field {
       text-transform: capitalize;
-      // font-family: $text__font;
+      // font-family: $text_font;
       background-color: #f4f4f4;
       width: 200px;
       border-radius: 0;
@@ -238,7 +237,7 @@ body.page-template {
       margin: 0;
       padding: 0;
       a {
-        // font-family: $text__font;
+        // font-family: $text_font;
       }
     }
 
@@ -258,7 +257,7 @@ body.page-template {
     }
   }
   h1 {
-    // font-family: $header__font;
+    // font-family: $header_font;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 2em;

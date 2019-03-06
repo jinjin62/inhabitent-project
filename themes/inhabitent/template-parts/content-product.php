@@ -14,7 +14,15 @@
         <?php endif; ?>
     </div>
     <!-- .entry-header -->
-    <?php the_title('<p class="entry-title">', '</p>'); ?>
+
+    <dl>
+        <?php the_title('<p class="product-title">', '</p>'); ?>
+        <dd>
+            <?php echo CFS()->get('product_price'); ?>
+        </dd>
+    </dl>
+
+    <!-- <?php the_title('<p class="entry-title">', '</p>'); ?>
 
     <!-- <div class="entry-content">
             <?php the_content(); ?>
@@ -27,7 +35,7 @@
         </div> -->
     <span>
         <?php echo CFS()->get('product_price'); ?>
-    </span>
+    </span> -->
     <footer class="entry-footer">
         <?php red_starter_entry_footer(); ?>
     </footer><!-- .entry-footer -->

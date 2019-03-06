@@ -4,7 +4,8 @@
   background-repeat: no-repeat, no-repeat;
   background-size: auto, cover;
   background-position: center, center;
-  height: 800px;
+  height: 100vh;
+  object-fit: cover;
 }
 //front-page do, eat, sleep, wear boxes
 .product-type-block-wrapper {
@@ -127,6 +128,7 @@
         text-decoration: none;
         font-weight: bold;
         font-size: 1.3rem;
+        color: $link_color;
       }
     }
 

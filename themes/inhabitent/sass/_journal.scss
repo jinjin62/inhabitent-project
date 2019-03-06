@@ -37,6 +37,7 @@
 .journal-container {
   padding-right: 50px;
   padding-left: 40px;
+  border-right: 1px solid #e1e1e1;
   p {
     padding-right: 180px;
   }
@@ -70,6 +71,11 @@
     letter-spacing: 2px;
     max-width: 75%;
     text-transform: uppercase;
+    color: white;
+  }
+  .single-content {
+    padding-right: 50px;
+    border-right: 1px solid #e1e1e1;
   }
   .single-content .entry-meta {
     bottom: 8px;
@@ -132,6 +138,23 @@
     width: 125px;
     &:hover {
       background-color: darken(#248a83, 10%);
+    }
+  }
+}
+
+.social-buttons {
+  button {
+    border: 1px solid black;
+    font-size: 0.9rem;
+    color: black;
+    background-color: #fff;
+    border-radius: 0;
+    text-transform: uppercase;
+    padding: 0.75rem 1.5rem;
+    box-shadow: none;
+    &:hover {
+      color: #fff;
+      background-color: $link_color;
     }
   }
 }

@@ -10,12 +10,14 @@
 
     $(document).on('keypress', function(event) {
       if ($seachInput.val() !== '') {
-        $('.search-form').submit();
+        if (event.which == 13) {
+          $('.search-form').submit();
+        }
       }
     });
   });
 
   $seachInput.on('blur', function() {
-    $seachInput.hide(500);
+    $seachInput.hide('slow');
   });
 })(jQuery);

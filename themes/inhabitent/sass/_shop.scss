@@ -72,7 +72,7 @@ body.archive {
       font-weight: 400;
       display: flex;
       justify-content: space-around;
-      .entry-title:after {
+      .entry-title:before {
         content: ' ..................................................................................';
       }
     }
@@ -80,6 +80,7 @@ body.archive {
   .content-block-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 100%;
     img {
       width: 100%;
       height: 250px;
@@ -87,3 +88,42 @@ body.archive {
     } //archive content img
   } //archive content wrapper
 }
+
+.product-icons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  article {
+    width: 25%;
+    img {
+      height: 260px;
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+}
+// .image-wrapper {
+//   dl {
+//     width: 100%;
+//   }
+//   p {
+//     float: left;
+//     width: 70%;
+//     overflow: hidden;
+//     white-space: nowrap;
+//   }
+
+//   dl {
+//     width: 100%;
+//   }
+//   p {
+//     float: left;
+//     width: 70%;
+//     overflow: hidden;
+//     white-space: nowrap;
+//   }
+
+//   p:after {
+//     content: ' ................................';
+//   }
+// |}
