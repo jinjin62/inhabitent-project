@@ -13,5 +13,5 @@ Plugins necessary included in repo, Business hour widget plug build with RED Wid
 Contact Form 7 plugin used for the email form.
 
 ### Product Spotlight
-g
+
 <img src="/themes/inhabitent/images/read-me-img.jpg">
