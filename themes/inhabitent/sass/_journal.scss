@@ -37,6 +37,7 @@
 .journal-container {
   padding-right: 50px;
   padding-left: 40px;
+  padding-bottom: 40px;
   border-right: 1px solid #e1e1e1;
   p {
     padding-right: 180px;
@@ -157,4 +158,21 @@
       background-color: $link_color;
     }
   }
+}
+.entry-footer {
+  text-transform: uppercase;
+  .cat-links,
+  .tags-links {
+    padding: 0 10px;
+    a {
+      color: $link_color;
+    }
+  }
+}
+
+.comment-meta a,
+.reply a,
+.comment-metadata a {
+  color: $link_color;
+  text-decoration: none;
 }

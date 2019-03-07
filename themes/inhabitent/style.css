@@ -393,7 +393,7 @@ body.page-template .entry-content > :not(header) {
     padding-right: 5%;
     padding-top: 3rem;
     padding-bottom: 3rem;
-    padding-left: 3%;
+    padding-left: 8%;
     border-right: 1px solid #e1e1e1;
     width: 73%; }
     #error404-wrapper .site-main h2 {
@@ -642,6 +642,7 @@ input {
   display: block;
   width: 100%;
   padding-right: 80px;
+  position: fixed;
   z-index: 100;
   opacity: 1;
   background-color: rgba(255, 255, 255, 0.85);
@@ -788,6 +789,24 @@ input {
 /* Search widget. */
 .widget_search .search-submit {
   display: none; }
+
+.widget ul,
+.textwidget {
+  list-style: none;
+  text-align: left;
+  margin: 0;
+  padding: 0; }
+  .widget ul a,
+  .textwidget a {
+    padding: 0;
+    color: #248a83; }
+    .widget ul a:visited,
+    .textwidget a:visited {
+      color: #248a83; }
+    .widget ul a:hover,
+    .textwidget a:hover {
+      color: #2f1339;
+      text-decoration: none; }
 
 /*--------------------------------------------------------------
 # Content
@@ -951,9 +970,10 @@ body.search .site-content {
     font-weight: bold;
     border-bottom: 1px solid #e1e1e1; }
   body.search .site-content .content-area {
-    padding-left: 5%;
+    padding-left: 16%;
     padding-right: 5%;
-    width: 70%;
+    padding-bottom: 3%;
+    width: 2000px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
@@ -1290,6 +1310,7 @@ body.search .site-content {
 .journal-container {
   padding-right: 50px;
   padding-left: 40px;
+  padding-bottom: 40px;
   border-right: 1px solid #e1e1e1; }
   .journal-container p {
     padding-right: 180px; }
@@ -1396,6 +1417,21 @@ body.search .site-content {
   .social-buttons button:hover {
     color: #fff;
     background-color: #248a83; }
+
+.entry-footer {
+  text-transform: uppercase; }
+  .entry-footer .cat-links,
+  .entry-footer .tags-links {
+    padding: 0 10px; }
+    .entry-footer .cat-links a,
+    .entry-footer .tags-links a {
+      color: #248a83; }
+
+.comment-meta a,
+.reply a,
+.comment-metadata a {
+  color: #248a83;
+  text-decoration: none; }
 
 #masthead {
   height: 45px;

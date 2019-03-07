@@ -68,3 +68,4 @@ function inhabitent_products($query)
     }
 }
 add_action('pre_get_posts', 'inhabitent_products', 1);
+

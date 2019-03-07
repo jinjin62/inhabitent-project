@@ -15,3 +15,23 @@
 .widget_search .search-submit {
   display: none;
 }
+
+.widget ul,
+.textwidget {
+  list-style: none;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  a {
+    padding: 0;
+    color: $link_color;
+
+    &:visited {
+      color: $link_color;
+    }
+    &:hover {
+      color: #2f1339;
+      text-decoration: none;
+    }
+  }
+}
